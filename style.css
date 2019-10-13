@@ -1,0 +1,113 @@
+html
+{
+    background-color:rgb(226, 226, 226);
+}
+strong
+{
+    font-weight: normal;    
+}
+em
+{
+    font-style: normal;
+}
+b
+{
+    font-weight: normal;
+}
+.normal
+{
+    font-weight: normal;
+}
+h3
+{
+    font-family:Verdana, sans-serif;
+    font-size:25px;
+    font-weight: 100;
+}
+h2 , h1
+{
+    font-family:Trebuchet MS, sans-serif;
+    font-size:30px;
+    font-weight: bold
+}
+.stock
+{
+    display:grid;
+    grid-template-columns: 15fr 85fr;
+    grid-template-rows: 65px auto auto;
+    grid-template-areas:" . repere "
+                        " . presentation "
+                        " . main ";
+    font-family:sans-serif;
+    font-size:17px
+}
+.rep
+{
+    grid-area: repere;
+}
+.banniere
+{
+    grid-area: entete;
+    padding-left: 1%;
+    background-color: black;
+    color:rgb(0, 185, 218);
+    height: 65px;
+    width:85%;
+    position:fixed;
+    top:0;
+    left:15%;
+    bottom:0;
+    border-bottom-width:10px;
+    border-bottom-style: double;
+    border-bottom-color: rgb(226, 226, 226);
+    border-left-width:10px;
+    border-left-style: double;
+    border-left-color: rgb(0, 185, 218);
+}
+.menu_nav
+{
+    width: 15%;
+    position:fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    background-color: rgb(0, 185, 218);
+    border-right-width:5px;
+    border-right-style: solid;
+    border-right-color: black;
+    border-top-width:5px;
+    border-top-style: solid;
+    border-top-color: black;
+}
+.site
+{
+    grid-area: presentation;
+    padding-left: 2%
+}
+.code
+{
+    grid-area: main;
+    padding-left: 2%
+}
+code
+{
+    font-family: Arial Narrow, sans-serif;
+    font-size:20px
+}
+a:link{text-decoration:none;}
+.link
+{
+    color:rgb(228, 228, 228);
+}
+.containerh1
+{
+    width:100%;
+    margin:auto;
+    display:flex; 
+    justify-content: center; 
+}
+.link:hover
+{
+    color:rgb(2, 0, 37);
+    text-decoration: underline rgb(2, 0, 37);
+}
